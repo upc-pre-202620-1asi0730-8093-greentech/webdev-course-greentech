@@ -1,0 +1,58 @@
+# Lección 2: Introducción a HTML
+
+**Enlace**: [Ver la lección]()  
+**Práctica**: [Clic para programar]()
+
+## ¿Qué es HTML?
+
+HTML, también conocido como HyperText Markup Language por sus siglas en inglés, es un lenguaje de marcado que tiene el propósito de estructurar los elementos de un sitio web.  
+
+Este lenguaje es el responsable de que en una página web se puedan ver algunos elementos como los siguientes:
+- Textos
+- Imágenes
+- Enlaces
+- Botones
+
+## La estructura de una página web
+
+Cada sitio web accedido desde un navegador web como Google Chrome usa documentos HTML para mostrar y organizar su contenido.  
+
+La estructura básica de un sitio web se ve así:
+
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documento HTML</title>
+    </head>
+    <body>
+        <h1>Mi primer documento HTML</h1>
+        <p>¡Hola mundo!</p>
+    </body>
+</html>
+```
+
+Aunque HTML solo esté compuesto de texto, el navegador web se encarga de transformarlo para solo mostrar el contenido principal. La imagen a continuación muestra el código anterior interpretado por el navegador:  
+
+![HTML interpretado por navegador](assets/html_introduction_1.png)
+
+## Como escribir HTML
+
+HTML funciona usando etiquetas de varios tipos que tienen la forma:
+
+`<` `(nombre de etiqueta)` `>`
+
+Algunas etiquetas deben cerrarse agregando un `/`:
+
+`<` `/` `(nombre de etiqueta)` `>`
+
+Dentro del código mostrado en la sección anterior se pueden observar algunas etiquetas importantes:
+
+- `<html>` y `</html>`: Son etiquetas de tipo `html` que sirven como contenedor de todos los elementos del código.
+- `<head>` y `</head>`: Son etiquetas de tipo `head` que contienen información de la página, como su título.
+- `<body>` y `</body>`: Son etiquetas de tipo `body` que muestran el contenido del sitio web, como sus encabezados o párrafos.
+
+Este lenguaje puede escribirse en varios programas, por ejemplo, un editor de código, un bloc de notas o incluso un navegador.
+
+## Ejemplo sencillo
+
