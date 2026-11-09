@@ -2,9 +2,9 @@
 
 ## Resumen del Curso
 
-En este curso de aproximadamente 1 hora se introducirá a estudiantes de secundaria a la creación de paginas web con HTML y CSS. 
+En este curso de aproximadamente 1 hora se introducirá a estudiantes de secundaria a la creación de páginas web con HTML y CSS. 
 
-Para llevar a cabo el curso no se necesitará descargar algun programa, ¡solo un navegador web como Google Chrome será suficiente!.
+Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo un navegador web como Google Chrome será suficiente!.
 
 **Duración total**: ~60 minutos  
 **Público objetivo**: Estudiantes de 12 a 17 años sin experiencia en programación  
@@ -16,7 +16,7 @@ Para llevar a cabo el curso no se necesitará descargar algun programa, ¡solo u
 
 ### Lección 1: ¿Qué es el desarrollo web? (6 minutos)
 
-- **Descripción**: Averigua de qué están hechas las paginas web y como puedes crearlas con HTML y CSS.
+- **Descripción**: Averigua de qué están hechas las páginas web y como puedes crearlas con HTML y CSS.
 - **Enlace**: [Ver la lección]()
 - **Consejos clave**: Define la estructura del contenido con HTML y aplica estilos con CSS.
 - **Empieza a programar**: [Open CodePen]()
@@ -46,19 +46,19 @@ Para llevar a cabo el curso no se necesitará descargar algun programa, ¡solo u
 
 - **Descripción**: Conoce qué es CSS y como puede decorar un HTML. 
 - **Enlace**: [Ver la lección]()
-- **Consejos clave**: Vincula CSS a la pagina web y prueba propiedades como `background-color`.
+- **Consejos clave**: Vincula CSS a la página web y prueba propiedades como `background-color`.
 - **Práctica**: [Clic para programar]() 
 
 ### Lección 6: Propiedades de CSS (7 minutos)
 
-- **Descripción**: Aplica colores, estilos y fuentes a una pagina web.
+- **Descripción**: Aplica colores, estilos y fuentes a una página web.
 - **Enlace**: [Ver la lección]()
 - **Consejos clave**: Usa las propiedades `color`, `font-family`, `font-size` y `text-align`.
 - **Práctica**: [Clic para programar]() 
 
 ### Lección 7: Selectores de CSS (5 minutos)
 
-- **Descripción**: Aprende a decorar elementos específicos de una pagina web.
+- **Descripción**: Aprende a decorar elementos específicos de una página web.
 - **Enlace**: [Ver la lección]()
 - **Consejos clave**: Aplica propiedades a elementos en general, grupos de elementos, clases e identificadores.
 - **Práctica**: [Clic para programar]() 
@@ -67,8 +67,8 @@ Para llevar a cabo el curso no se necesitará descargar algun programa, ¡solo u
 
 - **Descripción**: Combina HTML y CSS para crear una página web simple.
 - **Enlace**: [Ver la lección]()
-- **Consejos clave**: Organiza la pagina, aplica estilos y corrige errores.
-- **Proyecto Final**: [Crea tu Pagina]() **¡Guarda y comparte tu trabajo!**
+- **Consejos clave**: Organiza la página, aplica estilos y corrige errores.
+- **Proyecto Final**: [Crea tu Página]() **¡Guarda y comparte tu trabajo!**
 
 ### Lección 9: Consejos y Próximos Pasos (5 minutos)
 
