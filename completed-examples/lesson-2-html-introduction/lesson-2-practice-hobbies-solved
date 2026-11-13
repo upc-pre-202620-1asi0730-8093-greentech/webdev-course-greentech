@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--Esto es un comentario, no afecta al documento, ¡sirve para guiar!-->
+        <!--Cambia el titulo del documento-->
+        <title>Mi pasatiempo</title>
+    </head>
+
+    <body>
+        <!--Escribe un encabezado tu pasatiempo favorito-->
+        <h1>Programación</h1>
+        <!--Agrega un parrafo describiendo tu pasatiempo-->
+        <p>La programación puede ser un pasatiempo, en el cual puedes crear código que pueda realizar varias acciones ya sea en un programa, un sitio web u otro sistema. 
+        Al programar puedes mejorar tu creatividad y capacidad de resolver problemas.
+        Aunque puede parecer complejo para algunas personas, con la suficiente práctica se puede volver más fácil de manejar.
+        </p>
+    </body>
+</html>
