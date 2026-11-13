@@ -52,7 +52,7 @@ Cada sitio web accedido desde un navegador web como Google Chrome usa documentos
 
 La estructura básica de un sitio web se ve así:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -71,8 +71,12 @@ Aunque HTML solo esté compuesto de texto, el navegador web se encarga de transf
 
 ## Ejemplo sencillo
 
-En la siguiente práctica se solicitará cambiar el título de una página web, escribir un encabezado con un pasatiempo en ella y agregar un párrafo que lo describa.
+En la siguiente práctica se solicitará:
+
+- Cambiar el título de una página web
+- Escribir un encabezado con un pasatiempo en ella
+- Agregar un párrafo que lo describa.
 
 **Práctica**: [Clic para programar](https://onecompiler.com/html/4592mpxtm)
 
-**Ejemplo resuelto**: [Clic para ver](https://onecompiler.com/html/4592n6x8f)
+**Solución**: [Clic para ver](https://onecompiler.com/html/4592n6x8f)
