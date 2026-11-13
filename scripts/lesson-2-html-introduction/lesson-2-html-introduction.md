@@ -52,7 +52,7 @@ Cada sitio web accedido desde un navegador web como Google Chrome usa documentos
 
 La estructura básica de un sitio web se ve así:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
