@@ -103,3 +103,16 @@ Todos los elementos son afectados:
 <p class="parrafo"> Primer parrafo </p> 
 <button id="accion"> Boton </button>
 ```
+
+## Ejemplo sencillo
+
+En la siguiente práctica se solicitará:
+
+- Crear cuatro párrafos. Aplica una misma clase a los dos primeros y un identificador al tercero.
+- Usar CSS para que todos compartan una misma tipografía.
+- Usar CSS para compartir un fondo de color entre los dos primeros y dar otro color al tercero.
+
+**Práctica**: [Clic para programar](https://onecompiler.com/html/4592zauqz)
+
+**Solución**: [Clic para ver](https://onecompiler.com/html/4592zm222)
+
