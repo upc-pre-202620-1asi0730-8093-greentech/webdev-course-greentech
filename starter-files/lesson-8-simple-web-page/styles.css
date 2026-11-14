@@ -1,0 +1,53 @@
+/* 1. FONDO Y LETRA DE LA PÁGINA */
+body {
+  background: #eef4fb;
+  font-family: Arial, sans-serif;
+  color: #25364c;
+  line-height: 1.5;
+}
+
+/* 2. TARJETA: TAMAÑO Y ESPACIOS */
+.tarjeta {
+  max-width: 650px;
+  margin: 32px auto;
+  padding: 28px;
+  background: white;
+
+  /* 3. BORDE Y ESQUINAS */
+  border: 1px solid #ccd8e8;
+  border-radius: 14px;
+}
+
+/* 4. TÍTULO E IMAGEN */
+h1 {
+  color: #2458e8;
+}
+
+img {
+  width: 360px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. DETALLES PARA FACILITAR LA LECTURA */
+a {
+  color: #1745bf;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #66768c;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.nota {
+  font-size: 14px;
+}
