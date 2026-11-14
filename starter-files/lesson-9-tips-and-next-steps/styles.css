@@ -13,12 +13,10 @@ body {
 }
 
 h1 {
-  /* 2. Falta un signo entre la propiedad y el valor. */
   color #2458e8;
 }
 
 p {
-  /* 4. Elige un color que contraste mejor con el fondo blanco. */
   color: #e8edf5;
   font-size: 18px;
   line-height: 1.5;

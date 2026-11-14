@@ -8,7 +8,7 @@
 ## Materiales
 
 - [Presentación](lesson-6-css-properties-presentation.pptx).
-- [HTML inicial](../../starter-files/lesson-6-css-properties/index.html) y [CSS para completar](../../starter-files/lesson-6-css-properties/styles.css).
+- [HTML inicial](../../starter-files/lesson-6-css-properties/index.html) y [CSS inicial preparado](../../starter-files/lesson-6-css-properties/styles.css).
 - [HTML resuelto](../../completed-examples/lesson-6-css-properties/index.html) y [CSS resuelto](../../completed-examples/lesson-6-css-properties/styles.css).
 
 Se conserva la secuencia del Word de referencia: explicación breve, ejemplo preparado, comprobación y reto. El guion distingue lo que se dice de las acciones de grabación.
@@ -17,7 +17,7 @@ Se conserva la secuencia del Word de referencia: explicación breve, ejemplo pre
 
 Abrir un editor HTML y CSS en el navegador, como el utilizado en las otras lecciones del curso. No hace falta instalar un editor. Cargar el HTML en la sección HTML y el contenido de `styles.css` en la sección CSS. Si el editor trabaja con archivos completos, conservar el enlace a `styles.css`; si usa paneles separados y enlaza el CSS automáticamente, retirar ese enlace de la copia pegada en el panel HTML.
 
-Preparar dos pestañas: una con el ejercicio inicial y otra con la solución. Mostrar código y resultado a la vez, con un tamaño de letra que se lea en la grabación. No gastar tiempo creando archivos o escribiendo todo el ejemplo. Los cambios pequeños de valores sí se realizan durante la demostración.
+Preparar una pestaña de trabajo con el HTML y el CSS iniciales. La solución queda abierta únicamente como referencia para comprobar el resultado al terminar; no se copia durante la demostración. Mostrar código y resultado a la vez, con un tamaño de letra que se lea en la grabación. No gastar tiempo creando archivos o escribiendo todo el ejemplo. Los cambios pequeños de valores sí se realizan durante la demostración.
 
 La clase `card` y el HTML ya están preparados. No explicar todavía cómo funcionan los selectores: ese tema pertenece a la lección 7. `max-width` solo limita el ancho del ejemplo y no requiere desarrollar un tema adicional.
 
@@ -27,7 +27,7 @@ Los intervalos incluyen narración, movimientos del cursor, cambios de ventana y
 
 | Intervalo máximo | Contenido | Qué se muestra |
 | --- | --- | --- |
-| 00:00–00:35 | Introducción | Portada y tarjeta inicial frente a la final. |
+| 00:00–00:35 | Introducción | Portada y tarjeta inicial. |
 | 00:35–00:55 | Color y fondo | Diapositiva de color. |
 | 00:55–01:40 | Demostración de colores | Editor y resultado. |
 | 01:40–02:05 | Fuente y tamaño | Diapositiva de tipografía. |
@@ -46,9 +46,9 @@ Las diapositivas con la indicación «cambiar al editor» son guías del present
 
 **Narración**
 
-Esta tarjeta ya tiene un título y dos párrafos, pero su apariencia todavía es sencilla. Con CSS puedes cambiar sus colores, el tamaño de las letras y los espacios. Observa la versión final: el contenido es el mismo, aunque ahora resulta más fácil distinguirlo y leerlo. En esta lección puedes conseguir ese cambio con unas pocas propiedades.
+Esta tarjeta ya tiene un título y dos párrafos. También tiene estilos preparados, pero sus colores y espacios son sencillos. Durante la lección cambiarán unos pocos valores para darle una apariencia más clara. El contenido seguirá siendo el mismo. Cada cambio se comprobará en la vista previa.
 
-**Acción:** mostrar la portada dentro del mismo intervalo y alternar una vez entre la tarjeta inicial y la resuelta.
+**Acciones para grabar:** mostrar la portada y después la pestaña de trabajo. Abrir el panel HTML y señalar el título y los dos párrafos sin editarlos. Abrir el CSS y ejecutar la vista previa. Debe aparecer una tarjeta blanca con borde gris, esquinas rectas y poco espacio interior. No mostrar una solución distinta como si fuera el archivo de trabajo.
 
 ### 00:35–00:55 Color y fondo
 
@@ -62,9 +62,14 @@ Esta tarjeta ya tiene un título y dos párrafos, pero su apariencia todavía es
 
 **Narración**
 
-El ejemplo ya está escrito. En `body`, que representa el contenido de la página, aparece un fondo azul muy claro. En `p`, que corresponde a los párrafos, aparece un color oscuro. Observa lo que pasa al cambiar el fondo por blanco. El texto no cambia. Al restaurar el azul claro, vuelve el fondo anterior. Cada propiedad modifica una parte diferente de la apariencia.
+El ejemplo ya tiene un fondo gris claro. En el bloque body, background-color controla el fondo de la página. Al cambiarlo por este azul claro, la tarjeta blanca se distingue mejor. Ahora el título también puede recibir un color propio. La propiedad color cambia sus letras, sin cambiar lo que dicen. Los códigos que empiezan con almohadilla representan colores.
 
-**Acción:** en la solución, cambiar temporalmente `background-color: #eef4ff` por `white` y restaurarlo. Señalar `p { color: #25364c; }` y su resultado. No explicar códigos hexadecimales en detalle: son formas de indicar colores.
+**Acciones para grabar, en este orden:**
+
+1. Abrir el panel CSS y localizar el primer bloque, `body`.
+2. Cambiar únicamente `background-color: #f4f4f4;` por `background-color: #eef4ff;`. Ejecutar o actualizar la vista previa. Señalar el fondo exterior azul claro.
+3. Localizar `h1`. Cambiar `color: #25364c;` por `color: #2458e8;`. Conservar el color de `p`.
+4. Ejecutar y señalar el título azul. Dejar ambos cambios aplicados; no restaurar los valores iniciales.
 
 ### 01:40–02:05 Fuente y tamaño
 
@@ -78,9 +83,14 @@ La fuente es la forma de las letras. `font-family` permite elegirla y `font-size
 
 **Narración**
 
-Aquí aparece Arial como fuente. El párrafo tiene un tamaño de dieciocho píxeles. Si el tamaño baja a doce, el texto resulta más pequeño; al volver a dieciocho, recupera su tamaño. `line-height` deja espacio entre las líneas. No cambia lo que dice el párrafo: ayuda a que las líneas no queden demasiado juntas.
+Las letras del ejemplo tienen inicialmente otra forma. Al elegir Arial cambia la fuente de la página. Los párrafos empiezan con dieciséis píxeles; al subir a dieciocho, se ven más grandes. Después aumenta el espacio entre sus líneas. Son tres cambios distintos: forma, tamaño y separación. No hace falta cambiar el texto para mejorar su lectura.
 
-**Acción:** cambiar `font-size` de `18px` a `12px` y restaurarlo. Señalar `line-height: 1.5` sin abrir una explicación de unidades o herencia.
+**Acciones para grabar:**
+
+1. En `body`, sustituir `font-family: Georgia, serif;` por `font-family: Arial, sans-serif;`. Ejecutar y señalar la forma de las letras.
+2. En `p`, sustituir `font-size: 16px;` por `font-size: 18px;`. Ejecutar y observar el tamaño de los párrafos.
+3. En el mismo bloque, sustituir `line-height: 1.3;` por `line-height: 1.5;`. Ejecutar y señalar la separación entre líneas. Si un párrafo ocupa una sola línea, estrechar ligeramente la vista previa para observarlo.
+4. Mantener los tres valores finales.
 
 ### 02:45–03:15 Espacios y borde
 
@@ -94,9 +104,18 @@ El borde marca el contorno de la tarjeta. `padding` deja espacio dentro, entre e
 
 **Narración**
 
-Este bloque ya tiene el nombre `card`. Sus reglas forman la tarjeta. Con `padding: 24px`, el texto deja de estar pegado al borde. Con `border` aparece una línea alrededor. `border-radius` redondea las esquinas. El margen deja espacio por fuera; en este ejemplo también permite centrar la tarjeta. Observa cada cambio por separado para identificar qué propiedad lo produce.
+El bloque card reúne los estilos de la tarjeta. Primero aumenta el margen exterior: la tarjeta baja un poco y conserva su posición centrada. Después aumenta el espacio interior: las letras se alejan del borde. El borde ya existe; ahora cambia su color. Por último, las esquinas pasan de rectas a redondeadas. Cada propiedad tiene un efecto diferente.
 
-**Acción:** señalar las cuatro reglas en el código preparado. Cambiar `padding` a `0`, observar el texto junto al borde y restaurar `24px`. Mostrar brevemente el borde y las esquinas. No escribir la tarjeta desde cero.
+**Acciones para grabar:** localizar `.card` en CSS y realizar un cambio por vez, ejecutando después de cada uno.
+
+| Orden | Valor inicial | Valor final | Qué señalar en la vista previa |
+| --- | --- | --- | --- |
+| 1 | `margin: 8px auto;` | `margin: 20px auto;` | Mayor espacio sobre y debajo de la tarjeta. `auto` ya estaba preparado para centrarla. |
+| 2 | `padding: 8px;` | `padding: 24px;` | Separación entre las letras y el borde. |
+| 3 | `border: 2px solid #999999;` | `border: 2px solid #486bba;` | El borde gris se vuelve azul. Mantener su grosor. |
+| 4 | `border-radius: 0;` | `border-radius: 12px;` | Esquinas redondeadas. |
+
+No escribir reglas nuevas ni cambiar el HTML. `max-width` y el fondo blanco ya están preparados.
 
 ### 04:10–05:50 Pruebas y comparación
 
@@ -110,9 +129,9 @@ Ahora compara tres detalles. Primero, el tamaño del texto: debe leerse sin acer
 
 **Narración**
 
-Ahora puedes personalizar tu tarjeta. El HTML ya está preparado: no necesitas empezar desde cero. Cambia el fondo y elige una fuente. Después, agrega un borde y espacio interior con `padding`. Comprueba que el texto se lea bien. Como desafío adicional, separa la tarjeta con `margin` y redondea sus esquinas. Pausa el video para completar la actividad y compara tu resultado con la solución cuando termines. Tu tarjeta puede tener otros colores y seguir siendo correcta.
+Ahora puedes personalizar tu tarjeta. El HTML ya está preparado: no necesitas empezar desde cero. Cambia el fondo y elige una fuente. Después, personaliza el borde y el espacio interior con `padding`. Comprueba que el texto se lea bien. Como desafío adicional, separa la tarjeta con `margin` y redondea sus esquinas. Pausa el video para completar la actividad y compara tu resultado con la solución cuando termines. Tu tarjeta puede tener otros colores y seguir siendo correcta.
 
-**Acción:** mostrar la actividad inicial y señalar sus comentarios. No resolver el ejercicio en el video ni esperar a que el estudiante lo termine.
+**Acción:** mostrar la diapositiva del reto. Indicar que se puede descargar una copia nueva del ejemplo inicial para practicar, conservando aparte el trabajo realizado. No resolver el ejercicio en el video ni esperar a que el estudiante lo termine.
 
 ### 06:40–07:00 Cierre
 
@@ -133,3 +152,19 @@ Realizar un ensayo con cronómetro antes de grabar. Si un bloque supera su inter
 ## Referencias
 
 - [Espacio interior con padding en MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/padding).
+
+## Hoja de control para el presentador
+
+Las instrucciones de acción y las tablas no se leen en voz alta. Leer solo los párrafos de **Narración** y usar las acciones como recordatorio. No leer los códigos hexadecimales carácter por carácter: señalar el valor y decir «este azul claro» o «este color oscuro».
+
+Antes de iniciar la grabación en Windows:
+
+1. Descargar o actualizar el repositorio y abrir las carpetas de esta lección. No combinar el HTML inicial con el CSS resuelto.
+2. Abrir el editor del curso en el navegador; cargar ambos archivos iniciales. Comprobar que el CSS se aplica antes de grabar. Mantener JavaScript vacío.
+3. Abrir la presentación y el guion en otra pantalla o dispositivo. Desactivar notificaciones y aumentar el tamaño del código hasta que resulte legible.
+4. Ensayar los cambios con cronómetro. Al terminar, volver a cargar los archivos iniciales antes de la toma definitiva.
+5. Durante las demostraciones, mostrar el editor real. Las diapositivas ocultas «CAMBIAR AL EDITOR» sirven como recordatorio, no como pantalla del video.
+
+Al finalizar la demostración de tarjeta, las nueve sustituciones deben producir exactamente el CSS de la carpeta completed-examples. El HTML no cambia. Las pruebas del tramo 04:10–05:50 son temporales: restaurar tamaño a 18px, padding a 24px y color de párrafos a #25364c antes del reto. Dejar unos segundos para observar cada resultado, sin leer todo el archivo.
+
+**Si falla algo durante la toma:** comprobar que el cambio está en el bloque indicado, que conserva los dos puntos y el punto y coma, y ejecutar la vista previa. Detener y repetir el tramo si hace falta; no dedicar el tiempo de la clase a buscar archivos o configurar el editor. Las pausas para resolver el reto las realiza el estudiante fuera del tiempo del video.
