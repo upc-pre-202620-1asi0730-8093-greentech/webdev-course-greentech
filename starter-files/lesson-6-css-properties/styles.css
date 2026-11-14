@@ -1,0 +1,20 @@
+/* El HTML ya está preparado. Completa los estilos de esta tarjeta. */
+body {
+  /* 1. Cambia el fondo con background-color. */
+  /* 2. Elige una fuente con font-family. */
+}
+
+h1 {
+  /* 3. Elige un color que se lea bien sobre el fondo de la tarjeta. */
+}
+
+p {
+  /* 4. Usa font-size para que el texto se lea con comodidad. */
+}
+
+.card {
+  /* 5. Agrega un fondo con background-color. */
+  /* 6. Separa el texto del borde con padding. */
+  /* 7. Agrega un borde con border. */
+  /* Extra: agrega margin y border-radius. */
+}

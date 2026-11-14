@@ -53,8 +53,8 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 
 - **Descripción**: Aplica colores, estilos y fuentes a una página web.
 - **Enlace**: [Ver la lección]()
-- **Consejos clave**: Usa las propiedades `color`, `font-family`, `font-size` y `text-align`.
-- **Práctica**: [Clic para programar]() 
+- **Consejos clave**: Distingue texto y fondo, elige letras legibles y utiliza `padding`, `margin` y `border` para dar espacio a una tarjeta.
+- **Recursos**: [Guion y preparación](scripts/lesson-6-css-properties/lesson-6-css-properties.md) · [Presentación](scripts/lesson-6-css-properties/lesson-6-css-properties-presentation.pptx) · [Actividad inicial](starter-files/lesson-6-css-properties/) · [Solución](completed-examples/lesson-6-css-properties/)
 
 ### Lección 7: Selectores de CSS (5 minutos)
 
@@ -75,7 +75,7 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 - **Descripción**: Conoce buenas prácticas, errores comunes y dónde puedes aprender más.
 - **Enlace**: [Ver Lección]()
 - **Consejos Clave**: Valida el código y explora documentaciones web.
-- **Comparte tu Trabajo**: [Envía tu Creación]()
+- **Recursos**: [Guion y preparación](scripts/lesson-9-tips-and-next-steps/lesson-9-tips-and-next-steps.md) · [Presentación](scripts/lesson-9-tips-and-next-steps/lesson-9-tips-and-next-steps-presentation.pptx) · [Actividad inicial](starter-files/lesson-9-tips-and-next-steps/) · [Solución](completed-examples/lesson-9-tips-and-next-steps/)
 
 ## Recursos Adicionales
 
