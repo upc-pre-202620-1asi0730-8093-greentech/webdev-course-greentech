@@ -66,7 +66,7 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 8: Desarrollo de una página web sencilla (12 minutos)
 
 - **Descripción**: Combina HTML y CSS para crear una página con presentación, pasatiempos, imágenes, enlace y un campo de texto de práctica.
-- **Video**: Pendiente de publicación.
+- **Video**: [Ver la lección 8](https://youtu.be/v4FXV4srPdA)
 - **Consejos clave**: Organiza el contenido, aplica estilos, adapta las imágenes y comprueba el resultado.
 - **Recursos**: [Guion y preparación](scripts/lesson-8-simple-web-page/lesson-8-simple-web-page.md) · [Presentación](scripts/lesson-8-simple-web-page/lesson-8-simple-web-page-presentation.pptx) · [Actividad inicial](starter-files/lesson-8-simple-web-page/) · [Solución](completed-examples/lesson-8-simple-web-page/)
 - **Proyecto final**: [Personaliza tu página](starter-files/lesson-8-simple-web-page/Reto_independiente.md). Cambia el título, tres pasatiempos, el color del título y el texto del enlace.
