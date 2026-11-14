@@ -6,6 +6,8 @@ Basado en el Word «Guiones_Companeros_Web_Metodo_Dinamico» y en las diapositiv
 
 ## Materiales del repositorio
 
+- [Presentación de la lección 8](lesson-8-simple-web-page-presentation.pptx).
+
 - [Página inicial](../../starter-files/lesson-8-simple-web-page/index.html).
 - [Estilos iniciales](../../starter-files/lesson-8-simple-web-page/styles.css).
 - [Reto independiente](../../starter-files/lesson-8-simple-web-page/Reto_independiente.md).
