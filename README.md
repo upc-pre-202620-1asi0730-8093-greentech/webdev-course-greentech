@@ -75,7 +75,7 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 - **Descripción**: Conoce buenas prácticas, errores comunes y dónde puedes aprender más.
 - **Enlace**: [Ver Lección]()
 - **Consejos Clave**: Valida el código y explora documentaciones web.
-- **Comparte tu Trabajo**: [Envía tu Creación]()
+- **Recursos**: [Guion y preparación](scripts/lesson-9-tips-and-next-steps/lesson-9-tips-and-next-steps.md) · [Presentación](scripts/lesson-9-tips-and-next-steps/lesson-9-tips-and-next-steps-presentation.pptx) · [Actividad inicial](starter-files/lesson-9-tips-and-next-steps/) · [Solución](completed-examples/lesson-9-tips-and-next-steps/)
 
 ## Recursos Adicionales
 

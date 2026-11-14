@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef4ff;
+}
+
+.card {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 24px;
+  background-color: white;
+  border: 2px solid #486bba;
+  border-radius: 12px;
+}
+
+h1 {
+  /* 2. Falta un signo entre la propiedad y el valor. */
+  color #2458e8;
+}
+
+p {
+  /* 4. Elige un color que contraste mejor con el fondo blanco. */
+  color: #e8edf5;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
