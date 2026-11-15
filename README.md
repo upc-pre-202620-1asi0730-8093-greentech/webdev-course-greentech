@@ -17,9 +17,10 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 1: ¿Qué es el desarrollo web? (6 minutos)
 
 - **Descripción**: Averigua de qué están hechas las páginas web y como puedes crearlas con HTML y CSS.
-- **Enlace**: [Ver la lección]()
+- **Enlace**: [Ver la lección](https://youtu.be/rRqRwWRgXwE)
 - **Consejos clave**: Define la estructura del contenido con HTML y aplica estilos con CSS.
-- **Empieza a programar**: [Open CodePen]()
+- **Empieza a programar**: [Open OneCompiler](https://onecompiler.com/html/45993yc9w)
+- **Recursos**: [Guion y preparación](scripts/lesson-1-web-developmen/lesson-1-web-development.md)
 
 ### Lección 2: Introducción a HTML (7 minutos)
 
