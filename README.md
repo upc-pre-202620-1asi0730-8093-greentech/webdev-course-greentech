@@ -38,7 +38,7 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 4:  Más Elementos de HTML (6 minutos)
 
 - **Descripción**: Aprende a usar etiquetas de HTML con atributos.
-- **Enlace**: [Ver la lección]()
+- **Enlace**: [Ver la lección](https://youtu.be/Qek1f3ZVFag)
 - **Consejos clave**: Usa las etiquetas `<a>`, `<img>` y conoce sobre sus atributos.
 - **Práctica**: [Clic para programar]() 
 
