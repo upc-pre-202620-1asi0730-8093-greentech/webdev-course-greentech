@@ -37,10 +37,10 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 
 ### Lección 4:  Más Elementos de HTML (6 minutos)
 
-- **Descripción**: Aprende a usar etiquetas de HTML con atributos.
-- **Enlace**: [Ver la lección]()
+- **Descripción**: Aprende a crear enlaces, insertar imágenes y agregar campos de texto en HTML usando atributos como href, src, alt, for e id.
+- **Enlace**: [Ver la lección](https://youtu.be/Qek1f3ZVFag)
 - **Consejos clave**: Usa las etiquetas `<a>`, `<img>` y conoce sobre sus atributos.
-- **Práctica**: [Clic para programar]() 
+- **Práctica**: [Clic para programar](https://onecompiler.com/html/4598y4mss) 
 
 ### Lección 5: Introducción a CSS (6 minutos)
 
