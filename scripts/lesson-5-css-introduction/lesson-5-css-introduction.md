@@ -1,6 +1,6 @@
 # Lección 5: Introducción a CSS
 
-**Enlace**: [Ver la lección]()
+**Enlace**: [Ver la lección](https://youtu.be/XdLZ1Lj8XUc?si=9OVIrhioSYT1lsym)
 
 ## Preparación
 

@@ -45,7 +45,7 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 5: Introducción a CSS (6 minutos)
 
 - **Descripción**: Aprende a conectar HTML con CSS y a cambiar colores, fuentes, fondos, bordes y alineación.
-- **Enlace**: [Ver la lección]()
+- **Enlace**: [Ver la lección](https://youtu.be/XdLZ1Lj8XUc?si=9OVIrhioSYT1lsym)
 - **Consejos clave**: Vincula CSS a la página web y prueba propiedades como `background-color`.
 - **Práctica**: [Clic para programar](https://onecompiler.com/html/45993vpws)
 
