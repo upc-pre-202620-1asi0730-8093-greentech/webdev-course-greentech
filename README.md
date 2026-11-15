@@ -84,12 +84,6 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 - **Todas las Actividades Prácticas**: [Archivos iniciales](starter-files/)
 - **Código Fuente Completo**: [Ejemplos completados](completed-examples/)
 
-| Lección # | Actividad | Empezar a Programar |
-|----------|----------|-------------|
-| 1 | ... | [CodePen]() |
-| 3 | ... | [JSFiddle]() |
-| 5 | ... | [Replit]() |
-
 **¡Gracias por completar el curso!**
 
 ---
