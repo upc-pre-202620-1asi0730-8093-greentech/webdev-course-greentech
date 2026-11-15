@@ -1,53 +1,34 @@
-/* 1. FONDO Y LETRA DE LA PÁGINA */
+/* Completa estas reglas siguiendo la guía de la lección 8. */
+
 body {
-  background: #eef4fb;
-  font-family: Arial, sans-serif;
-  color: #25364c;
-  line-height: 1.5;
+  /* Define el fondo, la fuente, el color del texto y la altura de línea. */
 }
 
-/* 2. TARJETA: TAMAÑO Y ESPACIOS */
 .tarjeta {
-  max-width: 650px;
-  margin: 32px auto;
-  padding: 28px;
-  background: white;
-
-  /* 3. BORDE Y ESQUINAS */
-  border: 1px solid #ccd8e8;
-  border-radius: 14px;
+  /* Limita el ancho y agrega margen, espacio interior, fondo, borde y esquinas redondeadas. */
 }
 
-/* 4. TÍTULO E IMAGEN */
 h1 {
-  color: #2458e8;
+  /* Elige el color del título. */
 }
 
 img {
-  width: 360px;
-  max-width: 100%;
-  height: auto;
+  /* Define el ancho, limita el ancho máximo al contenedor y conserva la proporción. */
 }
 
-/* 5. DETALLES PARA FACILITAR LA LECTURA */
 a {
-  color: #1745bf;
+  /* Elige un color legible para el enlace. */
 }
 
 label {
-  display: block;
-  margin-bottom: 8px;
+  /* Coloca la pregunta en su propio bloque y sepárala del campo. */
 }
 
 input {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #66768c;
-  border-radius: 6px;
-  font: inherit;
+  /* Haz que el ancho incluya borde y relleno.
+     Completa ancho, espacio interior, borde, esquinas y fuente. */
 }
 
 .nota {
-  font-size: 14px;
+  /* Define el tamaño de letra del aviso. */
 }
