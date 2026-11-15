@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef4ff;
+}
+
+.card {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 24px;
+  background-color: white;
+  border: 2px solid #486bba;
+  border-radius: 12px;
+}
+
+h1 {
+  color: #2458e8;
+}
+
+p {
+  color: #25364c;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

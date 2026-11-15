@@ -1,0 +1,17 @@
+
+body {
+  background-color: #f3e8ff;
+  font-family: Verdana, sans-serif;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 30px;
+  border: 2px solid #9333ea;
+  border-radius: 15px;
+}
+
+h1 {
+  color: #7e22ce;
+  text-align: center;
+}

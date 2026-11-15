@@ -1,0 +1,34 @@
+/* Completa estas reglas siguiendo la guía de la lección 8. */
+
+body {
+  /* Define el fondo, la fuente, el color del texto y la altura de línea. */
+}
+
+.tarjeta {
+  /* Limita el ancho y agrega margen, espacio interior, fondo, borde y esquinas redondeadas. */
+}
+
+h1 {
+  /* Elige el color del título. */
+}
+
+img {
+  /* Define el ancho, limita el ancho máximo al contenedor y conserva la proporción. */
+}
+
+a {
+  /* Elige un color legible para el enlace. */
+}
+
+label {
+  /* Coloca la pregunta en su propio bloque y sepárala del campo. */
+}
+
+input {
+  /* Haz que el ancho incluya borde y relleno.
+     Completa ancho, espacio interior, borde, esquinas y fuente. */
+}
+
+.nota {
+  /* Define el tamaño de letra del aviso. */
+}
