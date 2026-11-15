@@ -1,211 +1,289 @@
-# Lección 8: Página web sencilla
+# Lección 8: Desarrollo de una página web sencilla
 
-Persona 5 · Grabación de aproximadamente 12 minutos.
+En esta lección reunirás HTML y CSS para crear una página sobre tus intereses. Trabajarás con un ejemplo llamado **Mi espacio creativo**: una tarjeta con un título, una presentación, una lista de pasatiempos, dos imágenes, un enlace y un campo para escribir.
 
-Basado en el Word «Guiones_Companeros_Web_Metodo_Dinamico» y en las diapositivas 55 a 71 de «Curso_Web_Presentaciones_Companeros_Completo».
+HTML organiza el contenido y CSS define su apariencia. No necesitas memorizar las etiquetas ni comenzar desde cero: primero abrirás el ejemplo, después entenderás cada parte y finalmente lo personalizarás.
 
-## Materiales del repositorio
+## Qué aprenderás
 
-- [Presentación de la lección 8](lesson-8-simple-web-page-presentation.pptx).
+Al terminar podrás organizar una página en secciones, relacionar sus elementos HTML con las reglas CSS, ajustar colores y espacios, y comprobar que las imágenes y los enlaces funcionen. También reconocerás qué hace un campo de texto y qué funciones todavía no tiene este proyecto.
 
-- [Página inicial](../../starter-files/lesson-8-simple-web-page/index.html).
-- [Estilos iniciales](../../starter-files/lesson-8-simple-web-page/styles.css).
-- [Reto independiente](../../starter-files/lesson-8-simple-web-page/Reto_independiente.md).
-- [Página resuelta](../../completed-examples/lesson-8-simple-web-page/index.html).
-- [Estilos de la solución](../../completed-examples/lesson-8-simple-web-page/styles.css).
-- [Explicación de la solución](../../completed-examples/lesson-8-simple-web-page/Solucion.md).
+Puedes seguir el [video de la lección 8](https://youtu.be/v4FXV4srPdA) y consultar la [presentación](lesson-8-simple-web-page-presentation.pptx). Avanza a tu ritmo y dedica el tiempo que necesites a las actividades.
 
-Para la demostración, utiliza el HTML y el CSS de starter-files de esta lección. La solución muestra una posible personalización e incluye el cuarto pasatiempo opcional.
+## Paso 1: Abre el proyecto
 
-## Antes de grabar
+Utilizaremos dos archivos:
 
-1. Abre https://onecompiler.com/html (sin la coma del enlace original).
-2. Copia el contenido de `index.html` en la pestaña HTML del editor y el de `styles.css` en la pestaña `styles.css`. Reemplaza el ejemplo inicial. Si hay código en `scripts.js`, déjalo vacío: esta lección no necesita JavaScript.
-3. Ejecuta el ejemplo con el control de ejecución del editor. Debes ver una tarjeta blanca, un título azul, tres pasatiempos, dos imágenes, un enlace y un campo de texto.
-4. Prepara otra pestaña de OneCompiler con el mismo HTML, pero con `styles.css` completamente vacío. Será la versión «sin nuestros estilos». El navegador seguirá mostrando sus estilos predeterminados.
-5. Comprueba antes de grabar que las dos imágenes carguen y que el enlace abra MDN. Las imágenes necesitan conexión a Internet. Si alguna no carga, revisa su dirección y vuelve a ejecutar.
-6. Aumenta el zoom hasta que el código se lea en tu grabación. Mantén visibles el código y el resultado. Cierra notificaciones y pestañas innecesarias.
-7. Ensaya con cronómetro. Los intervalos incluyen narración, desplazamientos, demostraciones y pequeñas pausas. Leer el texto seguido tardará menos de 12 minutos.
+| Archivo | Para qué sirve |
+| --- | --- |
+| [index.html](../../starter-files/lesson-8-simple-web-page/index.html) | Contiene los títulos, párrafos, lista, imágenes, enlace y campo de texto. |
+| [styles.css](../../starter-files/lesson-8-simple-web-page/styles.css) | Define colores, tipografía, espacios, bordes y tamaños. |
 
-El material pide código preparado. Durante la grabación, señala los fragmentos y muestra el resultado. Solo necesitas escribir dentro del campo de práctica. Puedes usar el PowerPoint para introducir conceptos; las diapositivas que dicen «GUÍA PARA EL PRESENTADOR · NO GRABAR» se sustituyen por el editor real.
+1. Abre el [editor HTML de OneCompiler](https://onecompiler.com/html).
+2. Abre el archivo `index.html` enlazado arriba. En GitHub puedes utilizar la vista **Raw** para ver solamente el código. Copia todo su contenido.
+3. Reemplaza el contenido del archivo HTML del editor con ese código.
+4. Haz lo mismo con `styles.css`: copia su contenido completo en el archivo CSS del editor y conserva el nombre `styles.css`.
+5. Si aparece un archivo JavaScript, déjalo vacío. Esta página solo necesita HTML y CSS.
+6. Ejecuta el proyecto y observa la vista previa.
 
-## Guion: qué decir y qué mostrar
+Deberías ver un fondo azul claro y una tarjeta blanca con el título azul «Mi espacio creativo», tres pasatiempos, dos imágenes, un enlace y un campo de texto. Las imágenes necesitan conexión a Internet porque están alojadas en otros sitios.
 
-Las acciones entre corchetes son indicaciones para ti: no las leas en voz alta. Los textos entre comillas son una base para hablar con naturalidad.
+Si ya descargaste el proyecto, también puedes abrir `index.html` en tu navegador. Mantén `styles.css` en la misma carpeta. Después de editar y guardar un archivo, recarga la página para ver el cambio.
 
-### 00:00–00:45 · Presentación del proyecto
+**Cómo seguir los pasos:** los fragmentos que aparecen a continuación ya están en los archivos iniciales. Búscalos y modifica las partes indicadas; no los agregues al final del archivo ni reemplaces todo el documento con un fragmento. Haz un cambio a la vez y vuelve a ejecutar para observar su efecto.
 
-[Muestra el resultado terminado. Recorre con el cursor el título, la lista, las imágenes y el campo.]
+## Paso 2: Reconoce la estructura del documento
 
-«Hola, soy Diego y en esta lección vamos a reunir lo que hemos aprendido de HTML y CSS en una página sencilla. Nuestro ejemplo se llama Mi espacio creativo. Tiene una presentación, una lista de pasatiempos, dos imágenes, un enlace para aprender más y un espacio para escribir. El código ya está preparado en OneCompiler. Vamos a revisar qué hace cada parte y a relacionarla con lo que aparece en pantalla. Al terminar, podrás personalizar esta página con tus propias ideas».
+Al principio de `index.html` encontrarás:
 
-### 00:45–01:10 · Organización de la página
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi espacio creativo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
 
-[Señala los tres comentarios numerados del HTML.]
+Una **etiqueta** indica qué tipo de elemento estamos escribiendo. Por ejemplo, `<title>` inicia el título del documento y `</title>` lo cierra. Un **atributo** añade información dentro de una etiqueta: en `lang="es"`, `lang` es el nombre del atributo y `es` es su valor.
 
-«Antes de pensar en colores, organizamos la información. Aquí tenemos tres partes: una presentación, nuestros pasatiempos y una sección con información adicional. Es parecido a organizar una hoja antes de decorarla. Estos comentarios nos ayudan a encontrar cada parte en el código, pero no se muestran en la página».
+- `<!DOCTYPE html>` indica que el documento utiliza HTML moderno.
+- `<html lang="es">` contiene la página e indica que su idioma es español. Su cierre `</html>` está al final del archivo.
+- `<head>` reúne información de configuración. El contenido principal que verá el visitante está después, dentro de `<body>`.
+- `charset="UTF-8"` permite interpretar correctamente caracteres como las tildes y la ñ.
+- La configuración `viewport` ayuda a que el navegador móvil use el ancho del dispositivo para mostrar la página.
+- `<title>` define el texto de la pestaña del navegador.
+- `<link rel="stylesheet" href="styles.css">` conecta el HTML con la hoja de estilos. `href` indica dónde encontrar ese archivo.
 
-### 01:10–02:10 · Título y presentación
+**Prueba:** cambia solo el texto dentro de `<title>`. Si abres el HTML directamente en el navegador, cambiará el nombre de su pestaña. El título grande dentro de la página seguirá igual: lo controla otra etiqueta, que veremos en el siguiente paso. En un editor integrado, la pestaña exterior puede conservar el nombre del editor.
 
-[Señala `main`, `class="tarjeta"`, `h1` y `p`. Después señala sus resultados.]
+## Paso 3: Organiza la presentación y los títulos
 
-«Empezamos por main, que contiene el contenido principal de nuestra página. Dentro encontramos h1: esta etiqueta identifica el título principal. El texto que está entre la apertura y el cierre es lo que aparece aquí: Mi espacio creativo. Debajo usamos p para escribir un párrafo de bienvenida».
+Dentro de `<body>` está el contenido visible. El proyecto utiliza `<main>` para agrupar el contenido principal:
 
-[Selecciona solamente el texto del título y después su etiqueta de cierre.]
+```html
+<main class="tarjeta">
+  <!-- 1. PRESENTACIÓN -->
+  <h1>Mi espacio creativo</h1>
+  <p>¡Bienvenido! Soy Alex y esta página reúne algunas cosas que me gustan.</p>
+```
 
-«Observa que el cierre lleva una barra. Así indicamos dónde termina el título. El párrafo tiene su propia apertura y cierre. También aparece class igual a tarjeta. Le estamos dando un nombre que luego utilizaremos en CSS para aplicar estilos a este bloque. Poner esa clase por sí solo todavía no crea el fondo blanco: eso lo hace el CSS que veremos después».
+Este fragmento muestra el inicio del bloque; su cierre `</main>` aparece al final del contenido, antes de `</body>`.
 
-[Deja unos segundos para comparar el código con el título y el párrafo visibles.]
+`<h1>` es el título principal de la página y `<p>` representa un párrafo. El texto se escribe entre la etiqueta de apertura y la de cierre. Los encabezados `<h2>` del resto del archivo presentan apartados dentro del tema principal, como «Mis pasatiempos».
 
-### 02:10–02:30 · Qué es una lista
+`class="tarjeta"` asigna una clase al elemento `main`. Más adelante, CSS utilizará ese nombre para darle fondo blanco, borde y espacios. El nombre de una clase se elige al escribir el proyecto: «tarjeta» no es una etiqueta especial de HTML.
 
-[Señala las viñetas en el resultado.]
+Las líneas entre `<!--` y `-->` son comentarios. Ayudan a encontrar las tres partes del proyecto: presentación, pasatiempos e información adicional. No aparecen en la vista previa ni crean secciones visibles por sí mismas.
 
-«Para mostrar nuestros pasatiempos usamos una lista. Como no son pasos que debamos seguir en orden, elegimos ul, una lista sin numeración. Dentro, cada pasatiempo se escribe con li. Por eso vemos una viñeta al lado de cada actividad».
+**Prueba:** cambia el texto de `<h1>` por «Mi rincón favorito» y escribe una breve presentación dentro de `<p>`. Puedes inventar un personaje. Ejecuta y comprueba que cambia el contenido sin desaparecer la tarjeta. Si quieres que la pestaña y el título principal coincidan, actualiza también `<title>`.
 
-### 02:30–03:30 · Revisar los pasatiempos
+## Paso 4: Modifica la lista de pasatiempos
 
-[Muestra el bloque desde `h2` hasta `</ul>`. Señala un `li` y su viñeta, de uno en uno.]
+Busca este bloque en el HTML:
 
-«Este h2 presenta el apartado Mis pasatiempos. Es un título de sección que está dentro del tema principal. Después empieza ul y dentro aparecen tres elementos li: leer, dibujar y escuchar música. Cada uno corresponde a una línea de la lista que vemos a la derecha».
+```html
+<h2>Mis pasatiempos</h2>
+<ul>
+  <li>Leer</li>
+  <li>Dibujar</li>
+  <li>Escuchar música</li>
+</ul>
+```
 
-«Si quisiéramos añadir bailar, colocaríamos otro li dentro de esta misma lista. Si solo quisiéramos cambiar leer por cocinar, cambiaríamos ese texto. La estructura puede quedarse igual. Fíjate también en los espacios al inicio de las líneas: nos ayudan a reconocer qué elementos están dentro de otros».
+`<ul>` agrupa una lista sin numeración. Cada `<li>` representa un elemento y produce una viñeta. Las tres actividades están dentro de la misma lista porque aparecen entre `<ul>` y `</ul>`.
 
-[Señala dónde iría el cuarto elemento sin escribirlo. Recorre las aperturas y cierres.]
+**Prueba:** reemplaza «Leer» por «Cocinar» y ejecuta. Debe cambiar una sola viñeta. Para añadir otra actividad, coloca una línea como `<li>Bailar</li>` antes de `</ul>`.
 
-«Entonces, ul reúne la lista completa y li representa cada elemento de esa lista».
+Conserva las etiquetas de cierre y los espacios al inicio de las líneas. Esos espacios se llaman sangría: ayudan a leer qué elementos están dentro de otros, aunque no son los que generan las viñetas.
 
-### 03:30–03:55 · Imagen y enlace
+## Paso 5: Comprende las imágenes y el enlace
 
-[Señala `img` y luego `a`.]
+### Imágenes
 
-«Ahora revisamos las imágenes y el enlace. Para cada imagen usamos img. **Su atributo src indica dónde está la imagen**, y **alt describe la imagen mediante texto**. Para el enlace usamos a. Su atributo **href indica la dirección que se abrirá cuando hagamos clic**».
+La primera imagen del ejemplo se escribe así:
 
-### 03:55–05:05 · Revisar los recursos
+```html
+<img src="https://placehold.co/360x200/png?text=Mi+espacio+creativo"
+     alt="Recuadro con el texto Mi espacio creativo"/>
+```
 
-[Señala brevemente la primera imagen de muestra. Después selecciona el `src` de la segunda imagen, la fotografía del árbol, y señala su resultado.]
+`img` inserta una imagen. `src` indica la dirección del archivo y `alt` proporciona un texto que describe su contenido. Esa descripción ayuda a quienes usan lectores de pantalla y puede mostrarse cuando la imagen no carga; no funciona como un pie de foto visible debajo de la imagen.
 
-«Conservé la imagen de muestra y añadí esta fotografía que encontré buscando en Google. Copié la dirección de la imagen en src. Google me ayudó a encontrarla; el archivo está alojado en dZoom. Debemos copiar la dirección de la imagen, no la de los resultados de búsqueda».
+A diferencia de `p`, `img` no contiene texto entre una apertura y un cierre: no necesita `</img>`. La barra final que ves en el ejemplo es opcional en HTML.
 
-[Señala `alt="Árbol solitario reflejado en el agua bajo un cielo nocturno estrellado"`.]
+El proyecto incluye una segunda imagen, una fotografía de un árbol. Cada imagen tiene su propio `src` y su propia descripción. Si sustituyes alguna, usa la dirección directa de la imagen y actualiza `alt` para que describa el nuevo contenido.
 
-«En alt describí lo que vemos: un árbol solitario reflejado en el agua bajo un cielo nocturno estrellado. Este texto ayuda a quienes usan lectores de pantalla y también puede aparecer si la foto no carga. Alt describe el contenido; no es el nombre del archivo».
+**Comprueba:** identifica cuál de las dos etiquetas corresponde a cada imagen de la vista previa. Si una no carga, revisa su dirección y tu conexión; un recurso externo también puede dejar de estar disponible.
 
-[Señala la dirección de `href` y el texto «Aprender HTML».]
+### Enlace
 
-«En el enlace, href indica el destino: la documentación de MDN. Aprender HTML es el texto que vemos. Vamos a comprobarlo».
+Debajo de las imágenes encontrarás:
 
-[Abre el enlace. Muestra brevemente la página de destino y regresa al editor.]
+```html
+<a href="https://developer.mozilla.org/es/docs/Web/HTML"
+   target="_blank" rel="noopener noreferrer">Aprender HTML</a>
+```
 
-«**Target con el valor _blank abre el enlace en otra pestaña o ventana, según el navegador**. **Recuerda: src indica dónde está la imagen y href indica el destino del enlace**».
+`<a>` crea un enlace. `href` contiene la dirección de destino, mientras que «Aprender HTML» es el texto visible sobre el que haces clic. `target="_blank"` abre el destino en otra pestaña o ventana, según el navegador. `rel="noopener noreferrer"` evita dar acceso a la ventana de origen y omite el envío de la dirección de procedencia al abrir el destino.
 
-### 05:05–05:25 · Campo de texto
+**Prueba:** cambia «Aprender HTML» por «Consultar HTML», dejando intacto `href`. Ejecuta y haz clic: cambia el texto visible, pero el destino sigue siendo la documentación de HTML.
 
-[Señala el campo y su pregunta.]
+## Paso 6: Usa el campo de texto
 
-«También podemos dejar un espacio para escribir. **Label presenta la pregunta y el input de tipo text permite introducir una respuesta**. En este ejemplo solo practicamos la escritura: no hemos programado una función para guardar ni enviar lo que escribimos».
+Busca estas dos líneas:
 
-### 05:25–06:15 · Probar el campo
+```html
+<label for="pasatiempo">¿Cuál es tu pasatiempo favorito?</label>
+<input id="pasatiempo" type="text" placeholder="Por ejemplo: bailar">
+```
 
-[Señala `for="pasatiempo"` y `id="pasatiempo"`.]
+`label` presenta la pregunta e `input` crea el campo. El atributo `type="text"` indica que permite escribir texto. `placeholder` muestra una pista mientras el campo está vacío; no reemplaza la pregunta.
 
-«**Estas dos palabras coinciden: el for de label y el id del input dicen pasatiempo. Esa coincidencia conecta la pregunta con el campo. Podemos comprobarlo haciendo clic en la pregunta: el cursor pasa al espacio para escribir**».
+El valor de `for` en la etiqueta y el valor de `id` en el campo coinciden: ambos dicen `pasatiempo`. Esa relación conecta la pregunta con el campo. El identificador `id` debe ser único en la página.
 
-[Haz clic en la etiqueta y escribe «Jugar fútbol» en el campo.]
+**Prueba:** haz clic en la pregunta y después escribe «Jugar fútbol». El campo debe recibir el foco para escribir y la pista desaparecerá al introducir texto.
 
-«**Ahora puedo escribir mi respuesta. El texto gris que aparecía antes era una pista, llamada placeholder. La pista desaparece cuando escribo, pero la pregunta sigue visible. Y recuerda: escribir aquí no añade un nuevo pasatiempo a la lista de arriba ni lo guarda. Es únicamente un campo de práctica**».
+Este ejemplo no guarda ni envía la respuesta y tampoco la añade a la lista de arriba. Para cambiar esa lista, debes editar sus elementos `li`. El párrafo con la clase `nota` explica esta limitación al visitante.
 
-### 06:15–06:35 · Relación entre HTML y CSS
+## Paso 7: Lee las reglas de CSS
 
-[Muestra la pestaña sin estilos y vuelve a la versión terminada.]
+Abre `styles.css`. Una regla CSS tiene un selector y un bloque de propiedades:
 
-«**Hasta aquí hemos hablado del contenido. HTML organiza lo que hay en la página. CSS define cómo se presenta. En estas dos versiones tenemos el mismo contenido, pero una usa nuestros colores, espacios y bordes. Vamos a ver las reglas que producen esa diferencia**».
+```css
+h1 {
+  color: #2458e8;
+}
+```
 
-### 06:35–08:00 · Fondo, tarjeta y espacios
+El **selector** `h1` elige los títulos principales. Entre las llaves, `color` es la propiedad y `#2458e8` es su valor, un tono azul expresado como código hexadecimal. Los dos puntos separan propiedad y valor; el punto y coma termina la declaración.
 
-[Abre `styles.css`. Señala `body` y sus propiedades, después `.tarjeta`.]
+**Prueba:** sustituye `#2458e8` por `purple`, conservando los dos puntos y el punto y coma. Ejecuta: el título se vuelve morado, pero su texto no cambia. Puedes indicar colores con nombres como `purple` o con códigos como el del ejemplo.
 
-«La regla body aplica estilos al cuerpo de la página. Background define el fondo azul claro y font-family elige Arial como fuente, con una alternativa genérica si no está disponible. Color establece el color del texto y line-height deja una separación cómoda entre las líneas».
+### Fondo y tipografía
 
-«Después encontramos punto tarjeta. Ese punto indica que estamos seleccionando una clase. Es la misma clase tarjeta que vimos en main, dentro del HTML».
+El proyecto comienza con esta regla:
 
-[Vuelve un momento al HTML para señalar la clase; regresa al CSS.]
+```css
+body {
+  background: #eef4fb;
+  font-family: Arial, sans-serif;
+  color: #25364c;
+  line-height: 1.5;
+}
+```
 
-«Max-width limita el ancho del contenido de la tarjeta a 650 píxeles. Margin deja espacio por fuera: aquí usamos 32 píxeles arriba y abajo, y auto a los lados para centrarla cuando sobra espacio. Padding deja espacio por dentro: separa el texto del borde. Background white le da el fondo blanco».
+`background` establece aquí el fondo azul claro. `font-family` elige Arial y, si no está disponible, una fuente de la familia genérica `sans-serif`. `color` define el color base del texto y `line-height: 1.5` establece una altura de línea equivalente a 1,5 veces el tamaño de la fuente, para separar las líneas.
 
-[Señala en la vista previa el espacio fuera y dentro de la tarjeta.]
+Muchos elementos reciben la fuente y el color del elemento que los contiene. Por eso estas reglas en `body` afectan al texto de la página. El título tiene su propio color porque la regla de `h1` lo define directamente.
 
-«Para recordarlo, imagina una caja: margin deja separación alrededor de la caja y padding deja espacio entre el contenido y su borde. Son espacios distintos».
+**Prueba:** cambia temporalmente el fondo a `white`, ejecuta y observa la diferencia. Luego restaura `#eef4fb`. El contenido HTML debe permanecer igual.
 
-### 08:00–08:30 · Bordes e imagen adaptable
+## Paso 8: Da forma a la tarjeta
 
-[Señala las esquinas y luego la imagen.]
+En CSS, el punto de `.tarjeta` indica que seleccionamos los elementos con `class="tarjeta"`:
 
-«Los detalles también ayudan a que la página se entienda. El borde permite distinguir la tarjeta del fondo y las esquinas redondeadas cambian su apariencia. Además, queremos que la imagen quepa si el espacio disponible se hace más pequeño. Para eso limitamos su ancho y conservamos sus proporciones».
+```css
+.tarjeta {
+  max-width: 650px;
+  margin: 32px auto;
+  padding: 28px;
+  background: white;
+  border: 1px solid #ccd8e8;
+  border-radius: 14px;
+}
+```
 
-### 08:30–09:50 · Revisar los detalles finales
+| Propiedad | Qué hace en este proyecto |
+| --- | --- |
+| `max-width: 650px` | Limita el ancho del contenido a 650 píxeles. En esta tarjeta, el espacio interior y el borde se suman a ese ancho. |
+| `margin: 32px auto` | Deja 32 píxeles fuera de la tarjeta arriba y abajo. Los márgenes laterales automáticos la centran cuando hay espacio disponible. |
+| `padding: 28px` | Deja 28 píxeles dentro, entre el contenido y el borde. |
+| `background: white` | Da fondo blanco a la tarjeta. |
+| `border: 1px solid #ccd8e8` | Dibuja un borde de un píxel, continuo y de color gris azulado. |
+| `border-radius: 14px` | Redondea las esquinas. |
 
-[Señala `border`, `border-radius`, la regla `h1` y la regla `img`.]
+La diferencia entre `margin` y `padding` se entiende imaginando una caja: `margin` deja espacio alrededor de la caja y `padding` separa lo que hay dentro de sus paredes.
 
-«Border tiene tres partes: un píxel de grosor, una línea continua indicada por solid y el color del borde. Border-radius redondea las esquinas. En h1, la propiedad color hace que el título principal se vea azul».
+**Prueba:** cambia `padding: 28px` a `padding: 0` y ejecuta. El contenido quedará junto al borde. Después restaura `28px`. Ahora cambia el primer valor de `margin` de `32px` a `60px`: aumentará el espacio exterior vertical. Restaura el valor al terminar la comparación.
 
-«En img tenemos max-width al cien por ciento. Eso limita la imagen al ancho disponible en su contenedor y evita que sobresalga. Height auto permite que su altura se ajuste manteniendo la proporción. Así la imagen no se estira de forma extraña».
+## Paso 9: Adapta las imágenes y el campo
 
-[Reduce el ancho disponible para el resultado, sin ocultarlo. Observa cómo se redistribuye el texto y cómo se reduce la imagen si el espacio es menor que su ancho.]
+Las imágenes comparten esta regla:
 
-«Al reducir el espacio, el texto puede ocupar más líneas y la imagen puede hacerse más pequeña. Esto nos ayuda a mantener la página legible».
+```css
+img {
+  width: 360px;
+  max-width: 100%;
+  height: auto;
+}
+```
 
-[Restaura el ancho. Señala brevemente las reglas de `label` e `input`.]
+`width` propone un ancho de 360 píxeles. `max-width: 100%` impide que ese ancho supere el espacio disponible en el contenedor. `height: auto` ajusta la altura conservando la proporción de la imagen.
 
-«Las últimas reglas dan espacio a la pregunta y al campo para que sea cómodo escribir. No necesitamos memorizar todo: lo importante es reconocer qué elemento seleccionamos y qué propiedad cambia su apariencia».
+**Prueba:** reduce el ancho de la vista previa o de la ventana del navegador. Cuando el espacio de la tarjeta sea menor que 360 píxeles, las imágenes deben reducirse sin deformarse ni sobresalir.
 
-### 09:50–10:50 · Comprobación del resultado
+El campo de texto tiene estas propiedades:
 
-[Haz cada comprobación mientras la mencionas.]
+```css
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #66768c;
+  border-radius: 6px;
+  font: inherit;
+}
+```
 
-«Vamos a revisar nuestra página como si fuéramos sus visitantes. Primero, el título nos dice de qué trata. Segundo, los tres pasatiempos se leen como una lista. Las dos imágenes cargan y el enlace nos lleva al recurso esperado, como comprobamos antes. También podemos hacer clic en la pregunta y escribir en el campo».
+`width: 100%` ocupa el ancho disponible. `box-sizing: border-box` hace que ese ancho incluya el relleno y el borde del campo. `padding`, `border` y `border-radius` funcionan como en la tarjeta, y `font: inherit` toma la configuración de fuente del elemento que lo contiene.
 
-[Alterna entre la versión sin estilos y la versión con estilos.]
+Las últimas reglas completan la presentación: `a` da color a los enlaces; `label` utiliza `display: block` para colocar la pregunta en su propio bloque y `margin-bottom` para separarla del campo; `.nota` selecciona el párrafo de aviso y le da un tamaño de letra de 14 píxeles.
 
-«Ahora comparemos. En ambas aparecen el mismo título, la misma lista, las imágenes y el campo. Lo que cambia es su presentación. Sin nuestro CSS, el navegador usa su aspecto predeterminado. Con nuestro CSS, vemos el fondo, la tarjeta, los colores y los espacios que elegimos. Esta comparación nos permite distinguir el trabajo de HTML del trabajo de CSS».
+## Paso 10: Comprueba la página
 
-### 10:50–11:40 · Actividad para el estudiante
+Antes de considerar terminado el proyecto, revisa lo siguiente:
 
-[Muestra `Reto_independiente.md` o la diapositiva de actividad.]
+- El título y la presentación se leen correctamente.
+- Cada pasatiempo aparece como una viñeta independiente.
+- Las dos imágenes cargan y tienen descripciones `alt` apropiadas.
+- El enlace abre la documentación esperada.
+- Al pulsar la pregunta, puedes escribir en el campo.
+- El texto y las imágenes caben al reducir el ancho de la ventana.
 
-«Ahora te toca personalizar el ejemplo. Cambia el título por uno que te guste. Escribe tres pasatiempos diferentes. Después cambia el color del título y modifica las palabras visibles del enlace. Puedes utilizar un personaje o datos inventados».
+Para distinguir HTML de CSS, guarda una copia del contenido de `styles.css` y vacía temporalmente ese archivo en el editor. Ejecuta: se mantienen el texto, las imágenes y el campo, pero desaparecen tus colores y espacios. El navegador sigue aplicando sus estilos predeterminados. Restaura el CSS y ejecuta otra vez.
 
-«Una pista: el título y los pasatiempos están en HTML. El color está en CSS, dentro de la regla h1. Para cambiar lo que dice el enlace, busca el texto entre la apertura y el cierre de a».
+Si algo no funciona, utiliza esta tabla para revisar el proyecto:
 
-«Cuando termines, ejecuta el ejemplo y comprueba que tus cambios se vean. Pausa el video para realizar la actividad y continúa cuando estés listo».
+| Problema | Qué revisar |
+| --- | --- |
+| No aparecen los estilos | El HTML debe enlazar `styles.css` y el archivo CSS debe tener exactamente ese nombre. |
+| No cambia el título visible | Modifica `h1`; `title` corresponde a la pestaña del navegador. |
+| Un color no se aplica | Revisa el selector, los dos puntos, el valor, el punto y coma y las llaves de la regla. |
+| Una imagen no carga | Comprueba `src`, la conexión y la disponibilidad del archivo externo. |
+| La imagen sobresale de la tarjeta | Comprueba que la regla `img` conserve `max-width: 100%`. |
+| Pulsar la pregunta no activa el campo | Verifica que `for` e `id` tengan el mismo valor. |
+| No aparecen tus últimos cambios | Guarda y recarga si trabajas localmente, o vuelve a ejecutar el proyecto en el editor. |
 
-[Haz una pausa breve. No hace falta esperar a que el alumno resuelva el ejercicio dentro de tu grabación.]
+## Paso 11: Personaliza tu página
 
-### 11:40–12:00 · Cierre
+Realiza el [reto independiente](../../starter-files/lesson-8-simple-web-page/Reto_independiente.md) utilizando el ejemplo como punto de partida. Si ya hiciste cambios durante la guía, puedes aprovecharlos:
 
-[Muestra la página terminada.]
+1. Elige un título propio y escríbelo en `h1`. Actualiza también `title` para mantener el mismo nombre en la pestaña.
+2. Escribe tres pasatiempos diferentes dentro de los elementos `li`.
+3. Cambia el color del título en la regla CSS de `h1`.
+4. Cambia el texto visible del enlace, conservando su dirección `href`.
 
-«Hoy reunimos los elementos principales de HTML y CSS en una página sencilla. Organizamos el contenido, le dimos estilo y comprobamos el resultado. Ya puedes usar esta misma estructura para crear una página sobre tus intereses. Con esto terminamos la lección 8. ¡Gracias!».
+Puedes utilizar datos inventados. Como desafío opcional, añade un cuarto pasatiempo y explica con tus palabras la diferencia entre `margin` y `padding`.
 
-## Recordatorio rápido para hablar sin memorizar
+Tu reto estará completo si aparecen tu nuevo título y tus pasatiempos, el título tiene otro color y el enlace muestra otro texto sin cambiar de destino. Los colores y las palabras no necesitan coincidir con los de la solución.
 
-Sigue esta secuencia en cada demostración: **qué hace → dónde está en el código → cómo se ve → comprobación**.
+## Compara con una posible solución
 
-| Código | Explicación sencilla |
-|---|---|
-| `main` | Contenido principal de la página. |
-| `h1` / `h2` | Título principal / título de una sección. |
-| `p` | Párrafo. |
-| `ul` / `li` | Lista sin numeración / cada elemento. |
-| `src` / `alt` | Dirección de la imagen / texto que la describe. |
-| `href` | Destino del enlace. |
-| `label` / `input` | Pregunta o etiqueta / campo para escribir. |
-| `for` e `id` | Deben coincidir para conectar etiqueta y campo. |
-| `.tarjeta` | Selecciona los elementos con la clase tarjeta. |
-| `margin` / `padding` | Espacio exterior / espacio interior. |
-| `border` / `border-radius` | Borde / redondeo de esquinas. |
-| `max-width` | Límite de ancho. |
+Cuando termines, consulta el [HTML resuelto](../../completed-examples/lesson-8-simple-web-page/index.html), su [CSS](../../completed-examples/lesson-8-simple-web-page/styles.css) y la [explicación de los cambios](../../completed-examples/lesson-8-simple-web-page/Solucion.md).
 
-Si te trabas, vuelve a «esta parte sirve para…» y señala el resultado. Evita leer los símbolos y las direcciones completas. Practica especialmente margin/padding y for/id: suelen necesitar una demostración visual.
+La solución utiliza «Mi mundo de pasatiempos», un título morado y el enlace «Consultar la guía de HTML». Muestra cuatro pasatiempos porque incluye el desafío opcional. También actualiza el texto de la imagen de muestra para que coincida con el nuevo título; este es un ajuste adicional.
 
-Los 12 minutos son una referencia del material original. Ajusta el ritmo después de un ensayo; no alargues silencios para completar el tiempo.
+Antes de cerrar la lección, comprueba que puedes responder: ¿dónde cambiarías el contenido de la página?, ¿qué regla controla el color del título?, ¿qué diferencia hay entre `src` y `href`?, ¿por qué coinciden `for` e `id`? Si alguna respuesta no está clara, vuelve al paso correspondiente y prueba un cambio pequeño en el proyecto.
