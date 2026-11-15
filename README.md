@@ -53,7 +53,7 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 6: Propiedades de CSS (7 minutos)
 
 - **Descripción**: Aplica colores, estilos y fuentes a una página web.
-- **Enlace**: [Ver la lección]()
+- **Enlace**: [Ver la lección](https://youtu.be/FvydXm1OPDc?si=m_CNkdk2ZIx_lSZf)
 - **Consejos clave**: Distingue texto y fondo, elige letras legibles y utiliza `padding`, `margin` y `border` para dar espacio a una tarjeta.
 - **Recursos**: [Guion y preparación](scripts/lesson-6-css-properties/lesson-6-css-properties.md) · [Presentación](scripts/lesson-6-css-properties/lesson-6-css-properties-presentation.pptx) · [Actividad inicial](starter-files/lesson-6-css-properties/) · [Solución](completed-examples/lesson-6-css-properties/)
 
@@ -75,7 +75,7 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 9: Consejos y Próximos Pasos (5 minutos)
 
 - **Descripción**: Conoce buenas prácticas, errores comunes y dónde puedes aprender más.
-- **Enlace**: [Ver Lección]()
+- **Enlace**: [Ver Lección](https://youtu.be/VM8FIOHtJzw?si=p0HeQQBXUDxJxiTc)
 - **Consejos Clave**: Valida el código y explora documentaciones web.
 - **Recursos**: [Guion y preparación](scripts/lesson-9-tips-and-next-steps/lesson-9-tips-and-next-steps.md) · [Presentación](scripts/lesson-9-tips-and-next-steps/lesson-9-tips-and-next-steps-presentation.pptx) · [Actividad inicial](starter-files/lesson-9-tips-and-next-steps/) · [Solución](completed-examples/lesson-9-tips-and-next-steps/)
 
