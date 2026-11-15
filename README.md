@@ -44,10 +44,10 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 
 ### Lección 5: Introducción a CSS (6 minutos)
 
-- **Descripción**: Conoce qué es CSS y como puede decorar un HTML. 
+- **Descripción**: Aprende a conectar HTML con CSS y a cambiar colores, fuentes, fondos, bordes y alineación.
 - **Enlace**: [Ver la lección]()
 - **Consejos clave**: Vincula CSS a la página web y prueba propiedades como `background-color`.
-- **Práctica**: [Clic para programar]() 
+- **Práctica**: [Clic para programar](https://onecompiler.com/html/45993vpws)
 
 ### Lección 6: Propiedades de CSS (7 minutos)
 
@@ -119,4 +119,4 @@ NRC 8093
 - Pumahualcca García, Diego Rodrigo
 - Landa Sánchez, Sunio Danilo
 
-**Fecha de entrega**: 21/10/2026
+**Fecha de entrega**: 15/11/2026
