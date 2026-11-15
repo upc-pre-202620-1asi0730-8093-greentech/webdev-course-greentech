@@ -1,6 +1,6 @@
 # Lección 2: Introducción a HTML
 
-**Enlace**: [Ver la lección]()  
+**Enlace**: [Ver la lección](https://youtu.be/huuj-a8wRg8)  
 
 ## ¿Qué es HTML?
 

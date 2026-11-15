@@ -1,6 +1,6 @@
 # Lección 7: Selectores CSS
 
-**Enlace**: [Ver la lección]()
+**Enlace**: [Ver la lección](https://youtu.be/OfUGCcHdnPs)
 
 ## ¿Qué son los selectores?
 

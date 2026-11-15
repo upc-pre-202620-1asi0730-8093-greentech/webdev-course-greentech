@@ -25,9 +25,9 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 2: Introducción a HTML (7 minutos)
 
 - **Descripción**: Conoce qué es HTML y como puedes escribirlo.
-- **Enlace**: [Ver la lección]()
-- **Consejos clave**: Crea elementos escribiendo entre `<` y `>`. Escribe el contenido de una pagina usando `<html>`, `<head>`, `<body>`.
-- **Práctica**: [Clic para programar]() **¡Comienza al instante, sin descargas!**
+- **Enlace**: [Ver la lección](https://youtu.be/huuj-a8wRg8)
+- **Consejos clave**: Crea elementos escribiendo entre `<` y `>`. Escribe el contenido de una página usando `<html>`, `<head>`, `<body>`.
+- **Recursos**: [Guía](scripts/lesson-2-html-introduction/lesson-2-html-introduction.md) · [Presentación](scripts/lesson-2-html-introduction/lesson-2-html-introduction-presentation.pptx) · [Actividad inicial](https://onecompiler.com/html/4592mpxtm) · [Solución](https://onecompiler.com/html/4592n6x8f) **¡Comienza al instante, sin descargas!**
 
 ### Lección 3: Elementos de HTML (6 minutos)
 
@@ -60,9 +60,9 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 ### Lección 7: Selectores de CSS (5 minutos)
 
 - **Descripción**: Aprende a decorar elementos específicos de una página web.
-- **Enlace**: [Ver la lección]()
+- **Enlace**: [Ver la lección](https://youtu.be/OfUGCcHdnPs)
 - **Consejos clave**: Aplica propiedades a elementos en general, grupos de elementos, clases e identificadores.
-- **Práctica**: [Clic para programar]() 
+- **Recursos**: [Guía](scripts/lesson-7-css-selectors/lesson-7-css-selectors.md) · [Presentación](scripts/lesson-7-css-selectors/lesson-7-css-selectors-presentation.pptx) · [Actividad inicial](https://onecompiler.com/html/4592zauqz) · [Solución](https://onecompiler.com/html/4592zm222)
 
 ### Lección 8: Desarrollo de una página web sencilla (12 minutos)
 
@@ -81,17 +81,14 @@ Para llevar a cabo el curso no se necesitará descargar algún programa, ¡solo 
 
 ## Recursos Adicionales
 
-- **Código Fuente Completo**: 
-- **Todas las Actividades Prácticas**:
+- **Todas las Actividades Prácticas**: [Archivos iniciales](starter-files/)
+- **Código Fuente Completo**: [Ejemplos completados](completed-examples/)
 
 | Lección # | Actividad | Empezar a Programar |
 |----------|----------|-------------|
 | 1 | ... | [CodePen]() |
 | 3 | ... | [JSFiddle]() |
 | 5 | ... | [Replit]() |
-
-- Cuestionario: [Pon a prueba tus conocimientos]()
-- Compartir: 
 
 **¡Gracias por completar el curso!**
 
